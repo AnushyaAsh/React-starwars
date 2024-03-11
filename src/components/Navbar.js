@@ -30,7 +30,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                <NavLink to={"/people"} className={ 'nav-link '+(status => status.isActive ? 'active' : '')}> 
-                    People
+                  People
                </NavLink>
                 </li>
                

@@ -1,11 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
-import ViewPost from "./components/People/ViewPeople";
+import AllPeople from "./components/People/AllPeople";
+import PersonDetailsPage from "./components/People/PersonDetailsPage";
+
+
 
 const router = createBrowserRouter([
     { path: '', element: <App/> },
-    { path: '/people', element:<ViewPost/>},
+    { path: '/people', element:<AllPeople/>},
+    { path: '/people/:uid', element:<PersonDetailsPage/>},
   
 ]);
 
